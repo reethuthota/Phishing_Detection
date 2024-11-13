@@ -33,13 +33,13 @@ void loop() {
 
     // Predicting for the first input
     fRes = ml.predict(input1, fResult);
-    final_output = (fResult[0] > 0.5f) ? 1 : 0;  // Corrected to use fResult
+    final_output = (fResult[0] > 0.5f) ? 1 : 0;  
     Serial.print("\nThe output value returned for input1 is: ");
     Serial.println(final_output); 
 
     // Predicting for the second input
     fRes = ml.predict(input2, fResult);
-    final_output = (fResult[0] > 0.5f) ? 1 : 0;  // Corrected to use fResult
+    final_output = (fResult[0] > 0.5f) ? 1 : 0;  
     Serial.print("\nThe output value returned for input2 is: ");
     Serial.println(final_output);      
 
